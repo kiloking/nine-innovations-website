@@ -3,8 +3,13 @@ import React from 'react'
 function Section06() {
   return (
     <div className='flex flex-col md:flex-row'>
-      <div>
-        <img src={process.env.PUBLIC_URL+'/images/section06_p01.png'} alt="" />
+      <div
+        className='w-full  bg-cover bg-top-left bg-no-repeat relative '
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section06_p01.png'})`,
+        }}
+      >
+        {/* <img src={process.env.PUBLIC_URL+'/images/section06_p01.png'} alt="" /> */}
       </div>
       <div
           className='w-full  bg-cover bg-top-left bg-no-repeat relative py-10'
